@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thaumy\\Desktop\\demo\\demo.fsproj": {}
+    "D:\\ghrepo\\palaflake\\impl\\fs\\demo\\demo.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\Thaumy\\Desktop\\demo\\demo.fsproj": {
+    "D:\\ghrepo\\palaflake\\impl\\fs\\demo\\demo.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thaumy\\Desktop\\demo\\demo.fsproj",
+        "projectUniqueName": "D:\\ghrepo\\palaflake\\impl\\fs\\demo\\demo.fsproj",
         "projectName": "demo",
-        "projectPath": "C:\\Users\\Thaumy\\Desktop\\demo\\demo.fsproj",
+        "projectPath": "D:\\ghrepo\\palaflake\\impl\\fs\\demo\\demo.fsproj",
         "packagesPath": "C:\\Users\\Thaumy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thaumy\\Desktop\\demo\\obj\\",
+        "outputPath": "D:\\ghrepo\\palaflake\\impl\\fs\\demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

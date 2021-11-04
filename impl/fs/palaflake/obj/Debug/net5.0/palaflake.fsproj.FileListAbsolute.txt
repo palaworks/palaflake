@@ -8,3 +8,13 @@ C:\Users\Thaumy\Desktop\palaflake\obj\Debug\net5.0\palaflake.AssemblyInfo.fs
 C:\Users\Thaumy\Desktop\palaflake\obj\Debug\net5.0\palaflake.dll
 C:\Users\Thaumy\Desktop\palaflake\obj\Debug\net5.0\palaflake.xml
 C:\Users\Thaumy\Desktop\palaflake\obj\Debug\net5.0\palaflake.pdb
+D:\ghrepo\palaflake\impl\fs\palaflake\bin\Debug\net5.0\palaflake.deps.json
+D:\ghrepo\palaflake\impl\fs\palaflake\bin\Debug\net5.0\palaflake.dll
+D:\ghrepo\palaflake\impl\fs\palaflake\bin\Debug\net5.0\palaflake.pdb
+D:\ghrepo\palaflake\impl\fs\palaflake\bin\Debug\net5.0\palaflake.xml
+D:\ghrepo\palaflake\impl\fs\palaflake\obj\Debug\net5.0\palaflake.fsproj.AssemblyReference.cache
+D:\ghrepo\palaflake\impl\fs\palaflake\obj\Debug\net5.0\palaflake.AssemblyInfoInputs.cache
+D:\ghrepo\palaflake\impl\fs\palaflake\obj\Debug\net5.0\palaflake.AssemblyInfo.fs
+D:\ghrepo\palaflake\impl\fs\palaflake\obj\Debug\net5.0\palaflake.dll
+D:\ghrepo\palaflake\impl\fs\palaflake\obj\Debug\net5.0\palaflake.xml
+D:\ghrepo\palaflake\impl\fs\palaflake\obj\Debug\net5.0\palaflake.pdb

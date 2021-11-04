@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = demo
-build_property.ProjectDir = C:\Users\Thaumy\Desktop\impl\cs\demo\
+build_property.ProjectDir = D:\ghrepo\palaflake\impl\cs\demo\

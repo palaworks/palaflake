@@ -95,11 +95,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thaumy\\Desktop\\palaflake\\palaflake.fsproj",
+      "projectUniqueName": "D:\\ghrepo\\palaflake\\impl\\fs\\palaflake\\palaflake.fsproj",
       "projectName": "palaflake",
-      "projectPath": "C:\\Users\\Thaumy\\Desktop\\palaflake\\palaflake.fsproj",
+      "projectPath": "D:\\ghrepo\\palaflake\\impl\\fs\\palaflake\\palaflake.fsproj",
       "packagesPath": "C:\\Users\\Thaumy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thaumy\\Desktop\\palaflake\\obj\\",
+      "outputPath": "D:\\ghrepo\\palaflake\\impl\\fs\\palaflake\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

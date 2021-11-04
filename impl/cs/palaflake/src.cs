@@ -14,11 +14,11 @@
         private byte cb; //回拨次数
         private ushort seq; //序列号
 
-        private object syncLock = new();
+        private object mutex = new();
 
         //ID结构参考
-        //11111111 11111111 11111111 11111111
-        //11111111 22222222 00445555 55555555
+        //11111111 00223333 33333333 33333333
+        //33333333 33333333 33334444 44444444
 
         /// <summary>
         /// 构造palaflake生成器
@@ -27,7 +27,10 @@
         /// <param name="startYear">计时起始年</param>
         public Generator(byte machineId, ushort startYear)
         {
-            Debug.Assert(DateTime.UtcNow.Year - startYear < 34, "The startYear cannot older than 34 years");
+            //设置了未来时间
+            Trace.Assert(DateTime.UtcNow.Year >= startYear, "The start_year cannot be set to a future time");
+            //时间戳溢出
+            Trace.Assert(DateTime.UtcNow.Year - startYear < 34, "The startYear cannot older than 34 years");
 
             start = new DateTime(startYear, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
@@ -36,9 +39,13 @@
 
         public ulong Next()
         {
-            lock (syncLock)
+            lock (mutex)
             {
-                var currTimestamp = (ulong) (DateTime.UtcNow - start).TotalMilliseconds;
+                var utc = DateTime.UtcNow;
+
+                //当前时间早于起始时间
+                Trace.Assert(utc > start, "Abnormal system time");
+                var currTimestamp = (ulong) (utc - start).TotalMilliseconds;
 
                 if (currTimestamp > lastTimestamp)
                     seq = 0;
@@ -60,7 +67,8 @@
 
                 lastTimestamp = currTimestamp;
 
-                return currTimestamp << 24 | machineId << 16 | (ulong) cb << 12 | seq;
+
+                return machineId << 56 | (ulong) cb << 52 | currTimestamp << 12 | seq;
             }
         }
     }

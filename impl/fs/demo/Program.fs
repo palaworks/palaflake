@@ -17,10 +17,12 @@ let showBinary (timeStamp: uint64) =
 
     foldr f "" bytes
 
+
 let g = Generator(1uy, 2021us)
 let mutable before = 0UL
 
 while true do
+    //Thread.Sleep 233
 
     let latest = g.Next()
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thaumy\\Desktop\\impl\\cs\\demo\\demo.csproj": {}
+    "D:\\ghrepo\\palaflake\\impl\\cs\\demo\\demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thaumy\\Desktop\\impl\\cs\\demo\\demo.csproj": {
+    "D:\\ghrepo\\palaflake\\impl\\cs\\demo\\demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thaumy\\Desktop\\impl\\cs\\demo\\demo.csproj",
+        "projectUniqueName": "D:\\ghrepo\\palaflake\\impl\\cs\\demo\\demo.csproj",
         "projectName": "demo",
-        "projectPath": "C:\\Users\\Thaumy\\Desktop\\impl\\cs\\demo\\demo.csproj",
+        "projectPath": "D:\\ghrepo\\palaflake\\impl\\cs\\demo\\demo.csproj",
         "packagesPath": "C:\\Users\\Thaumy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thaumy\\Desktop\\impl\\cs\\demo\\obj\\",
+        "outputPath": "D:\\ghrepo\\palaflake\\impl\\cs\\demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

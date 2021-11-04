@@ -22,3 +22,15 @@ C:\Users\Thaumy\Desktop\impl\cs\palaflake\obj\Debug\net5.0\palaflake.csproj.Core
 C:\Users\Thaumy\Desktop\impl\cs\palaflake\obj\Debug\net5.0\palaflake.dll
 C:\Users\Thaumy\Desktop\impl\cs\palaflake\obj\Debug\net5.0\ref\palaflake.dll
 C:\Users\Thaumy\Desktop\impl\cs\palaflake\obj\Debug\net5.0\palaflake.pdb
+D:\ghrepo\palaflake\impl\cs\palaflake\bin\Debug\net5.0\palaflake.deps.json
+D:\ghrepo\palaflake\impl\cs\palaflake\bin\Debug\net5.0\palaflake.dll
+D:\ghrepo\palaflake\impl\cs\palaflake\bin\Debug\net5.0\ref\palaflake.dll
+D:\ghrepo\palaflake\impl\cs\palaflake\bin\Debug\net5.0\palaflake.pdb
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\palaflake.csproj.AssemblyReference.cache
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\palaflake.GeneratedMSBuildEditorConfig.editorconfig
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\palaflake.AssemblyInfoInputs.cache
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\palaflake.AssemblyInfo.cs
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\palaflake.csproj.CoreCompileInputs.cache
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\palaflake.dll
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\ref\palaflake.dll
+D:\ghrepo\palaflake\impl\cs\palaflake\obj\Debug\net5.0\palaflake.pdb
