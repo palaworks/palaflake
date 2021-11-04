@@ -13,7 +13,8 @@ type Generator(machineId: byte, startYear: uint16) =
     //暂不考虑State Monad
 
     let start =
-        Debug.Assert(DateTime.UtcNow.Year - int startYear < 34, "The startYear cannot older than 34 years")
+        Trace.Assert(DateTime.UtcNow.Year >= int startYear, "The start_year cannot be set to a future time")
+        Trace.Assert(uint16 DateTime.UtcNow.Year - startYear < 34us, "The startYear cannot older than 34 years")
         DateTime(int startYear, 1, 1, 0, 0, 0, DateTimeKind.Utc)
 
     let mutable lastTimestamp = 0UL
@@ -21,7 +22,7 @@ type Generator(machineId: byte, startYear: uint16) =
     let mutable cb = 0uy //回拨次数
     let mutable seq = 0us //序列号
 
-    let syncLock = Object()
+    let mutex = Object()
 
     let compare a b : Ordering =
         if a > b then GT
@@ -29,14 +30,17 @@ type Generator(machineId: byte, startYear: uint16) =
         else LT
 
     //ID结构参考
-    //11111111 11111111 11111111 11111111
-    //11111111 22222222 00445555 55555555
+    //11111111 00223333 33333333 33333333
+    //33333333 33333333 33334444 44444444
 
     member this.Next() =
-        lock syncLock
+        lock mutex
         <| fun _ ->
-            let mutable currTimestamp =
-                uint64 (DateTime.UtcNow - start).TotalMilliseconds
+            let utc = DateTime.UtcNow
+
+            //当前时间早于起始时间
+            Trace.Assert(utc > start, "Abnormal system time")
+            let mutable currTimestamp = uint64 (utc - start).TotalMilliseconds
 
             match compare currTimestamp lastTimestamp with
             | GT -> seq <- 0us
@@ -55,7 +59,7 @@ type Generator(machineId: byte, startYear: uint16) =
 
             lastTimestamp <- currTimestamp
 
-            (currTimestamp <<< 24)
-            ||| (uint64 machineId <<< 16)
-            ||| (uint64 cb <<< 12)
+            (uint64 machineId <<< 56)
+            ||| (uint64 cb <<< 52)
+            ||| (currTimestamp <<< 12)
             ||| uint64 seq
