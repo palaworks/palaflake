@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KbgtklXF1GBVSKzzPCzS2Chehv1n5KCnehDOi1uTwP+Cn29r/I3Hbe988dLIw1VbNHaZdlEPUiCHdN6nSknjmA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thaumy\\Desktop\\palaflake\\palaflake.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thaumy\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

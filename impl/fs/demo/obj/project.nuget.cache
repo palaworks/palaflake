@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "G8fHtKnjgOph+bonRN0js4fPxz3m0bqv/Ua2Rv3Czu8IB12Az78ge4X/aV7t/tc7dxf3Zs5KqsdHLSD++f9okg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Thaumy\\Desktop\\demo\\demo.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Thaumy\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
