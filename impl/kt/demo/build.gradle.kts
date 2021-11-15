@@ -1,5 +1,8 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     kotlin("jvm") version "1.5.10"
+    application
 }
 
 group = "thaumy.cn"
@@ -14,4 +17,13 @@ dependencies {
     //implementation(fileTree("src/main/resources"))
 
     implementation(kotlin("stdlib"))
+}
+
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>() {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+application {
+    mainClass.set("MainKt")
 }

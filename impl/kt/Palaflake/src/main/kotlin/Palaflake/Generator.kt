@@ -60,7 +60,7 @@ class Generator(private val machineId: Byte, private val startYear: UShort) {
                 cb++
 
                 //TODO 此处必须阻塞一毫秒（或进行其他耗时操作），否则上面的cb++会有几率自增2
-                Thread.sleep(1)
+                //Thread.sleep(1)
 
                 if (cb >= 4u)//超出了最大回拨次数
                     throw Exception("Too many clock adjustments")

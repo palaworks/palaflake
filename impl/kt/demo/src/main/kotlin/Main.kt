@@ -1,3 +1,5 @@
+package demo
+
 import Palaflake.Generator
 
 fun main() {
