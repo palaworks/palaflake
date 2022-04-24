@@ -3,11 +3,7 @@
 open System
 open System.Threading
 open System.Diagnostics
-
-type private Ordering =
-    | GT
-    | EQ
-    | LT
+open fsharper.types.Ord
 
 type Generator(machineId: byte, startYear: uint16) =
     //暂不考虑State Monad
@@ -24,11 +20,6 @@ type Generator(machineId: byte, startYear: uint16) =
 
     let mutex = Object()
 
-    let compare a b : Ordering =
-        if a > b then GT
-        else if a = b then EQ
-        else LT
-
     //ID结构参考
     //11111111 00223333 33333333 33333333
     //33333333 33333333 33334444 44444444
@@ -36,13 +27,15 @@ type Generator(machineId: byte, startYear: uint16) =
     member this.Next() =
         lock mutex
         <| fun _ ->
-            let utc = DateTime.UtcNow
+            let utcNow = DateTime.UtcNow
 
             //当前时间早于起始时间
-            Trace.Assert(utc > start, "Abnormal system time")
-            let mutable currTimestamp = uint64 (utc - start).TotalMilliseconds
+            Trace.Assert(utcNow > start, "Abnormal system time")
 
-            match compare currTimestamp lastTimestamp with
+            let mutable currTimestamp =
+                uint64 (utcNow - start).TotalMilliseconds
+
+            match cmp currTimestamp lastTimestamp with
             | GT -> seq <- 0us
             | EQ ->
                 seq <- seq + 1us
