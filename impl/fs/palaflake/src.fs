@@ -18,14 +18,12 @@ type Generator(machineId: byte, startYear: uint16) =
     let mutable cb = 0uy //回拨次数
     let mutable seq = 0us //序列号
 
-    let mutex = Object()
-
     //ID结构参考
     //11111111 00223333 33333333 33333333
     //33333333 33333333 33334444 44444444
 
-    member this.Next() =
-        lock mutex
+    member self.Next() =
+        lock self
         <| fun _ ->
             let utcNow = DateTime.UtcNow
 
