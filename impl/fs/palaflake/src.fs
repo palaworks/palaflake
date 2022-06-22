@@ -1,11 +1,11 @@
-﻿namespace palaflake
+﻿namespace pilipala.util.palaflake
 
 open System
 open System.Threading
 open fsharper.op.Alias
 open fsharper.typ.Ord
 
-type Palaflaker(machineId: u8, startYear: u16) =
+type Generator(machineId: u8, startYear: u16) =
     //暂不考虑State Monad
 
     let start =
