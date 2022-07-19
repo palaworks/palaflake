@@ -13,6 +13,6 @@
     <SourceRoot Include="/home/thaumy/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/thaumy/.nuget/packages/fsharp.core/6.0.4</PkgFSharp_Core>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/thaumy/.nuget/packages/fsharp.core/6.0.1</PkgFSharp_Core>
   </PropertyGroup>
 </Project>

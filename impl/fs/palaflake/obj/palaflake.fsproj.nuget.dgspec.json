@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/thaumy/repo/palaflake/impl/fs/palaflake/palaflake.fsproj": {}
+    "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/palaflake.fsproj": {}
   },
   "projects": {
-    "/home/thaumy/repo/palaflake/impl/fs/palaflake/palaflake.fsproj": {
+    "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/palaflake.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/thaumy/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
+        "projectUniqueName": "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
         "projectName": "palaflake",
-        "projectPath": "/home/thaumy/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
+        "projectPath": "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
         "packagesPath": "/home/thaumy/.nuget/packages/",
-        "outputPath": "/home/thaumy/repo/palaflake/impl/fs/palaflake/obj/",
+        "outputPath": "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/thaumy/.nuget/NuGet/NuGet.Config"
@@ -20,7 +20,6 @@
           "net6.0"
         ],
         "sources": {
-          "/usr/share/dotnet/sdk/6.0.300/FSharp/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +36,7 @@
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[6.0.4, )",
+              "version": "[6.0.1, )",
               "generatePathProperty": true
             }
           },
@@ -56,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
         }
       }
     }

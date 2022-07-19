@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dOKz3m/0wE0Wcv0/yf9w9XmNmhKnV2EQQaN9AJbqAPuw2Fh+ntFmkExLddauVyP4/JwowOmYdK9QYL623cPiOw==",
+  "dgSpecHash": "nCMEQmpwGcnKKWIqbF3gcCBO4tsdGwxCB4zc8i04l/xp9VcxeL9U6v5XGMAj6M93hZYr9HzqO8cHhe7nWwlYFQ==",
   "success": true,
   "projectFilePath": "/home/thaumy/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
   "expectedPackageFiles": [
-    "/home/thaumy/.nuget/packages/fsharp.core/6.0.4/fsharp.core.6.0.4.nupkg.sha512"
+    "/home/thaumy/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512"
   ],
   "logs": []
 }

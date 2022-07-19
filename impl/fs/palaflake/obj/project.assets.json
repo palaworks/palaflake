@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "FSharp.Core/6.0.4": {
+      "FSharp.Core/6.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/FSharp.Core.dll": {}
@@ -62,17 +62,17 @@
     }
   },
   "libraries": {
-    "FSharp.Core/6.0.4": {
-      "sha512": "CYqAfmO7JvN38M+ACkstS8taVfl8C0mCkvSiBAshfKuu2Nut6+8MuFU7Wahu09wGIyFPlRz5ArFWxSOM5mhMSA==",
+    "FSharp.Core/6.0.1": {
+      "sha512": "VrFAiW8dEEekk+0aqlbvMNZzDvYXmgWZwAt68AUBqaWK8RnoEVUNglj66bZzhs4/U63q0EfXlhcEKnH1sTYLjw==",
       "type": "package",
-      "path": "fsharp.core/6.0.4",
+      "path": "fsharp.core/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "contentFiles/any/netstandard2.0/FSharp.Core.xml",
         "contentFiles/any/netstandard2.1/FSharp.Core.xml",
-        "fsharp.core.6.0.4.nupkg.sha512",
+        "fsharp.core.6.0.1.nupkg.sha512",
         "fsharp.core.nuspec",
         "lib/netstandard2.0/FSharp.Core.dll",
         "lib/netstandard2.0/FSharp.Core.xml",
@@ -109,7 +109,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FSharp.Core >= 6.0.4"
+      "FSharp.Core >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -118,11 +118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/thaumy/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
+      "projectUniqueName": "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
       "projectName": "palaflake",
-      "projectPath": "/home/thaumy/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
+      "projectPath": "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/palaflake.fsproj",
       "packagesPath": "/home/thaumy/.nuget/packages/",
-      "outputPath": "/home/thaumy/repo/palaflake/impl/fs/palaflake/obj/",
+      "outputPath": "/home/thaumy/data/dev/repo/palaflake/impl/fs/palaflake/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/thaumy/.nuget/NuGet/NuGet.Config"
@@ -131,7 +131,6 @@
         "net6.0"
       ],
       "sources": {
-        "/usr/share/dotnet/sdk/6.0.300/FSharp/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -148,7 +147,7 @@
           "FSharp.Core": {
             "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[6.0.4, )",
+            "version": "[6.0.1, )",
             "generatePathProperty": true
           }
         },
@@ -167,7 +166,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.106/RuntimeIdentifierGraph.json"
       }
     }
   }

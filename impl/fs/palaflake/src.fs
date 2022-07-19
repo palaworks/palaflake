@@ -1,4 +1,5 @@
-﻿namespace pilipala.util.palaflake
+﻿[<AutoOpen>]
+module pilipala.util.id.palaflake
 
 open System
 open System.Threading
@@ -18,7 +19,7 @@ type Generator(machineId: u8, startYear: u16) =
         DateTime(i32 startYear, 1, 1, 0, 0, 0, DateTimeKind.Utc)
 
     let mutable lastTimestamp = 0uL
-    
+
     let mutable cb = 0uy //回拨次数
     let mutable seq = 0us //序列号
 
