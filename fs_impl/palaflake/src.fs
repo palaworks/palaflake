@@ -6,7 +6,6 @@ open System.Threading
 
 type private u8 = uint8
 type private u16 = uint16
-type private i64 = int64
 let inline private u16 x = uint16 x
 let inline private i32 x = int32 x
 let inline private i64 x = int64 x
@@ -40,8 +39,7 @@ type Generator(instanceId: u8, startYear: u16) =
             if utcNow < start then //当前时间早于起始时间
                 failwith $"Illegal system time({utcNow})"
 
-            let mutable currTimestamp =
-                i64 (utcNow - start).TotalMilliseconds
+            let mutable currTimestamp = i64 (utcNow - start).TotalMilliseconds
 
             if currTimestamp > lastTimestamp then
                 seq <- 0L
