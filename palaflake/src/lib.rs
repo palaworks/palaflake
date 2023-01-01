@@ -1,5 +1,3 @@
-extern crate chrono;
-
 use std::sync::Mutex;
 use std::thread;
 use std::time::Duration;
@@ -30,7 +28,10 @@ impl Generator {
             instance_id: instance_id as i64,
 
             start_timestamp:
-            NaiveDateTime::parse_from_str(&format!("{start_year}-01-01 01:00:00 +00:00"), "%Y-%m-%d %H:%M:%S %z")
+            NaiveDateTime::parse_from_str(
+                &format!("{start_year}-01-01 01:00:00 +00:00"),
+                "%Y-%m-%d %H:%M:%S %z",
+            )
                 .unwrap()
                 .timestamp_millis() as i64,
 
@@ -85,4 +86,3 @@ impl Iterator for Generator {
         Some(self.next())
     }
 }
-
