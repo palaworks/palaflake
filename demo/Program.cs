@@ -13,14 +13,14 @@ while (true)
     var latest = g.Next();
 
     Trace.Assert(before < latest);
-    Console.WriteLine($"{latest} : {showBinary(latest)}");
+    Console.WriteLine($"{latest} : {ShowBinary(latest)}");
 
     before = latest;
 
     //Thread.Sleep(233);
 }
 
-string showBinary(long timeStamp)
+string ShowBinary(long timeStamp)
 {
     StringBuilder sb = new();
     var bytes = BitConverter.GetBytes(timeStamp);
