@@ -7,7 +7,7 @@ extern crate palaflake;
 use palaflake::Generator;
 
 fn main() {
-    let mut g = Generator::new(1, 2022);
+    let mut g = Generator::new(1, 2023);
 
     /*for id in g {
         println!("{} : {}", id, show_binary(id));
@@ -34,5 +34,3 @@ fn show_binary(num: i64) -> String {
         .collect::<Vec<String>>()
         .join(" ")
 }
-
-
