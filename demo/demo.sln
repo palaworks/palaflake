@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "demo", "demo.fsproj", "{1B62044A-3E8C-4A88-8140-0DAAFA5F500E}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "palaflake", "..\palaflake\palaflake.fsproj", "{73A1A6B6-4212-4404-AADC-47B031440888}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{1B62044A-3E8C-4A88-8140-0DAAFA5F500E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B62044A-3E8C-4A88-8140-0DAAFA5F500E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B62044A-3E8C-4A88-8140-0DAAFA5F500E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A1A6B6-4212-4404-AADC-47B031440888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A1A6B6-4212-4404-AADC-47B031440888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A1A6B6-4212-4404-AADC-47B031440888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A1A6B6-4212-4404-AADC-47B031440888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
