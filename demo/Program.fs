@@ -4,16 +4,14 @@ open System.Threading
 open pilipala.util.id.palaflake
 
 let showBinary (timeStamp: int64) =
-    let bytes =
-        [ for b in BitConverter.GetBytes(timeStamp) -> b ]
+    let bytes = [ for b in BitConverter.GetBytes(timeStamp) -> b ]
 
     let rec foldr f acc list =
         match list with
         | x :: xs -> f x (foldr f acc xs)
         | [] -> acc
 
-    let f =
-        fun (b: byte) acc -> acc + Convert.ToString(b, 2).PadLeft(8, '0') + " "
+    let f = fun (b: byte) acc -> acc + Convert.ToString(b, 2).PadLeft(8, '0') + " "
 
     foldr f "" bytes
 
