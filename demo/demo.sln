@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo", "demo.csproj", "{84E4E203-E2AC-4467-BE59-4FE8380E6235}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palaflake", "..\palaflake\palaflake.csproj", "{37FE8916-97EA-4EA9-A0AE-B38C26608E42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{84E4E203-E2AC-4467-BE59-4FE8380E6235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84E4E203-E2AC-4467-BE59-4FE8380E6235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84E4E203-E2AC-4467-BE59-4FE8380E6235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FE8916-97EA-4EA9-A0AE-B38C26608E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FE8916-97EA-4EA9-A0AE-B38C26608E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FE8916-97EA-4EA9-A0AE-B38C26608E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FE8916-97EA-4EA9-A0AE-B38C26608E42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

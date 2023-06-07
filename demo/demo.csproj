@@ -2,13 +2,11 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net7.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
-      <Reference Include="palaflake">
-        <HintPath>..\palaflake\bin\Debug\net6.0\palaflake.dll</HintPath>
-      </Reference>
+      <ProjectReference Include="..\palaflake\palaflake.csproj" />
     </ItemGroup>
 
 </Project>
