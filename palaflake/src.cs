@@ -1,17 +1,17 @@
-﻿namespace palaflake;
+﻿namespace Palaflake;
 
 using System;
 using System.Threading;
 
 public class Generator
 {
-    private DateTime start;
+    private readonly DateTime _start;
 
-    private long instanceId;
-    private long lastTimestamp;
+    private readonly long _instanceId;
+    private long _lastTimestamp;
 
-    private long cb; //回拨次数
-    private long seq; //序列号
+    private long _cb; //回拨次数
+    private long _seq; //序列号
 
     /// <summary>
     /// 构造palaflake生成器
@@ -28,12 +28,12 @@ public class Generator
         if (DateTime.UtcNow.Year - startYear >= 34)
             throw new Exception($"The startYear({startYear}) cannot older than 34 years");
 
-        start = new DateTime(startYear, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        _start = new DateTime(startYear, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
-        this.instanceId = instanceId;
+        this._instanceId = instanceId;
     }
 
-    private object mutex = new();
+    private object _mutex = new();
 
     //ID结构参考
     //01112222 22222222 22222222 22222222
@@ -46,40 +46,40 @@ public class Generator
     /// <exception cref="Exception"></exception>
     public long Next()
     {
-        lock (mutex)
+        lock (_mutex)
         {
             var utcNow = DateTime.UtcNow;
 
-            if (utcNow < start) //当前时间早于起始时间
+            if (utcNow < _start) //当前时间早于起始时间
                 throw new Exception($"Illegal system time({utcNow})");
 
-            var currTimestamp = (long)(utcNow - start).TotalMilliseconds;
+            var currTimestamp = (long)(utcNow - _start).TotalMilliseconds;
 
-            if (currTimestamp > lastTimestamp)
-                seq = 0;
-            else if (currTimestamp == lastTimestamp)
+            if (currTimestamp > _lastTimestamp)
+                _seq = 0;
+            else if (currTimestamp == _lastTimestamp)
             {
-                seq++;
-                if (seq > 4095) //一毫秒内的请求超过4096次
+                _seq++;
+                if (_seq > 4095) //一毫秒内的请求超过4096次
                 {
                     Thread.Sleep(1); //阻塞一毫秒
                     currTimestamp++;
-                    seq = 0;
+                    _seq = 0;
                 }
             }
             else //LT，发生时间回拨
             {
-                cb++;
-                if (cb > 7) //超出了最大回拨次数
-                    throw new Exception($"Out of max clock adjustments({cb})");
+                _cb++;
+                if (_cb > 7) //超出了最大回拨次数
+                    throw new Exception($"Out of max clock adjustments({_cb})");
             }
 
-            lastTimestamp = currTimestamp;
+            _lastTimestamp = currTimestamp;
 
-            return (cb << 60)
+            return (_cb << 60)
                    | (currTimestamp << 20)
-                   | (instanceId << 12)
-                   | seq;
+                   | (_instanceId << 12)
+                   | _seq;
         }
     }
 }
