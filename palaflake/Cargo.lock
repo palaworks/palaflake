@@ -123,7 +123,7 @@ checksum = "dd8b5dd2ae5ed71462c540258bedcb51965123ad7e7ccf4b9a8cafaa4a63576d"
 
 [[package]]
 name = "palaflake"
-version = "1.1.0"
+version = "1.1.1"
 dependencies = [
  "chrono",
 ]
