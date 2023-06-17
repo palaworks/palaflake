@@ -1,7 +1,7 @@
 open System
 open System.Diagnostics
 open System.Threading
-open pilipala.util.id.palaflake
+open Palaflake
 
 let showBinary (timeStamp: int64) =
     let bytes = [ for b in BitConverter.GetBytes(timeStamp) -> b ]

@@ -1,5 +1,5 @@
 ﻿[<AutoOpen>]
-module pilipala.util.id.palaflake
+module Palaflake
 
 open System
 open System.Threading
