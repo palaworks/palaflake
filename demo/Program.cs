@@ -2,7 +2,7 @@
 using System.Text;
 using System.Diagnostics;
 using System.Threading;
-using palaflake;
+using Palaflake;
 
 var g = new Generator(1, 2021);
 
