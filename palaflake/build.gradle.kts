@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "thaumy.cn"
-version = "1.0-SNAPSHOT"
+version = "1.1.1"
 
 repositories {
     mavenCentral()
