@@ -4,10 +4,10 @@ use std::time::Duration;
 
 extern crate palaflake;
 
-use palaflake::Generator;
+use palaflake::Gen;
 
 fn main() {
-    let mut g = Generator::new(1, 2023);
+    let mut g = Gen::new(1, 2023).unwrap();
 
     /*for id in g {
         println!("{} : {}", id, show_binary(id));
@@ -15,7 +15,7 @@ fn main() {
 
     let mut before = 0;
     loop {
-        let latest = g.next();
+        let latest = g.next().unwrap();
 
         assert!(before < latest);
         println!("{} : {}", latest, show_binary(latest));
